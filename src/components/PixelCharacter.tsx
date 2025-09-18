@@ -1,22 +1,9 @@
-import React from 'react';
-
 interface PixelCharacterProps {
   type: 'knight' | 'mage';
   isWinner?: boolean;
 }
 
 export function PixelCharacter({ type, isWinner }: PixelCharacterProps) {
-  const [frame, setFrame] = React.useState(0);
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      setFrame(prev => (prev + 1) % 4);
-    }, 800); // Change frame every 800ms for slow idle animation
-
-    return () => clearInterval(interval);
-  }, []);
-
-
   return (
     <div className={`
       w-16 h-20 

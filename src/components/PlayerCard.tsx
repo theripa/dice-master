@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Player } from '../types/game';
 import { Dice } from './Dice';
 import { PixelCharacter } from './PixelCharacter';
