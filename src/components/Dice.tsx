@@ -46,9 +46,10 @@ export function Dice({ value, isRolling, size = 'medium' }: DiceProps) {
         font-bold
         transition-all
         duration-300
-        ${isRolling ? 'animate-bounce' : ''}
+        ${isRolling ? 'animate-bounce scale-110' : 'hover:scale-105'}
         ${value ? 'text-amber-900' : 'text-amber-700'}
         font-mono
+        cursor-default
       `}
     >
       {isRolling ? rollingFace : (value ? getDiceFace(value) : '?')}

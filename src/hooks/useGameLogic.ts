@@ -10,8 +10,8 @@ const createInitialPlayer = (id: string, name: string): Player => ({
 
 const createInitialGameState = (): GameState => ({
   players: [
-    createInitialPlayer('player1', 'Player 1'),
-    createInitialPlayer('player2', 'Player 2'),
+    createInitialPlayer('player1', 'Knight'),
+    createInitialPlayer('player2', 'Mage'),
   ],
   currentRound: 1,
   maxRounds: 5,

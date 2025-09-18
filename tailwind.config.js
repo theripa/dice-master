@@ -1,18 +1,15 @@
-@@ .. @@
- /** @type {import('tailwindcss').Config} */
- export default {
--  content: [],
-+  content: [
-+    "./index.html",
-+    "./src/**/*.{js,ts,jsx,tsx}",
-+  ],
-   theme: {
--    extend: {},
-+    extend: {
-+      animation: {
-+        'spin': 'spin 0.3s linear infinite',
-+      }
-+    },
-   },
-   plugins: [],
- }
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      animation: {
+        'spin': 'spin 0.3s linear infinite',
+      }
+    },
+  },
+  plugins: [],
+}

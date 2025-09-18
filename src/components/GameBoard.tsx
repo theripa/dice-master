@@ -24,7 +24,7 @@ export function GameBoard({ gameState, onRollDice, onResetGame }: GameBoardProps
 
   // Show victory message when round ends
   React.useEffect(() => {
-    if (roundWinner && gameStatus !== 'rolling') {
+    if (roundWinner && gameStatus !== 'rolling' && gameStatus !== 'finished') {
       setShowVictoryMessage(`${roundWinner.name.toUpperCase()} SURVIVED!`);
       const timer = setTimeout(() => {
         setShowVictoryMessage(null);
@@ -123,7 +123,7 @@ export function GameBoard({ gameState, onRollDice, onResetGame }: GameBoardProps
                     px-6 py-3 chibi-text chibi-small font-bold
                     transition-all duration-300 transform
                     fantasy-button
-                    ${isRolling ? 'opacity-50 cursor-not-allowed' : ''}
+                    ${isRolling ? 'opacity-50 cursor-not-allowed' : 'hover:scale-105'}
                     text-amber-900
                   `}
                 >
@@ -134,7 +134,7 @@ export function GameBoard({ gameState, onRollDice, onResetGame }: GameBoardProps
               <div>
                 <button
                   onClick={onResetGame}
-                  className="px-4 py-2 text-amber-900 chibi-text chibi-small font-bold fantasy-button"
+                  className="px-4 py-2 text-amber-900 chibi-text chibi-small font-bold fantasy-button hover:scale-105 transition-transform duration-200"
                 >
                   new quest
                 </button>
