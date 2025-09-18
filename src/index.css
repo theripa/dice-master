@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Press Start 2P', monospace;
+}
+
+/* Fantasy RPG Pixel Art Styles */
+.pixel-character {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.chibi-text {
+  font-family: 'Press Start 2P', monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.chibi-small {
+  font-size: 8px;
+  line-height: 1.2;
+}
+
+.chibi-medium {
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.chibi-large {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.fantasy-card {
+  border: 4px solid #8B4513;
+  border-top-color: #D2691E;
+  border-left-color: #D2691E;
+  border-right-color: #654321;
+  border-bottom-color: #654321;
+  box-shadow: 
+    inset 2px 2px 0px #F4A460,
+    inset -2px -2px 0px #654321,
+    4px 4px 0px #2F1B14;
+}
+
+.fantasy-button {
+  border: 3px solid #8B4513;
+  border-top-color: #D2691E;
+  border-left-color: #D2691E;
+  border-right-color: #654321;
+  border-bottom-color: #654321;
+  box-shadow: 
+    inset 1px 1px 0px #F4A460,
+    inset -1px -1px 0px #654321,
+    2px 2px 0px #2F1B14;
+  background: linear-gradient(135deg, #DAA520 0%, #B8860B 50%, #8B6914 100%);
+  transition: all 0.1s ease;
+}
+
+.fantasy-button:hover {
+  background: linear-gradient(135deg, #FFD700 0%, #DAA520 50%, #B8860B 100%);
+  transform: translate(-1px, -1px);
+  box-shadow: 
+    inset 1px 1px 0px #F4A460,
+    inset -1px -1px 0px #654321,
+    3px 3px 0px #2F1B14;
+}
+
+.fantasy-button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 
+    inset 1px 1px 0px #654321,
+    inset -1px -1px 0px #F4A460,
+    1px 1px 0px #2F1B14;
+}
+
+.fantasy-dice {
+  border: 3px solid #8B4513;
+  border-top-color: #D2691E;
+  border-left-color: #D2691E;
+  border-right-color: #654321;
+  border-bottom-color: #654321;
+  box-shadow: 
+    inset 2px 2px 0px #F5DEB3,
+    inset -2px -2px 0px #654321,
+    3px 3px 0px #2F1B14;
+  background: linear-gradient(135deg, #F5DEB3 0%, #DEB887 50%, #D2B48C 100%);
+}
+
+.fantasy-glow {
+  text-shadow: 
+    0 0 5px #FFD700,
+    0 0 10px #FFD700,
+    0 0 15px #FF8C00;
+}
+
+.fantasy-progress {
+  border: 2px solid #8B4513;
+  border-top-color: #654321;
+  border-left-color: #654321;
+  border-right-color: #D2691E;
+  border-bottom-color: #D2691E;
+  box-shadow: inset 1px 1px 2px #654321;
+}
