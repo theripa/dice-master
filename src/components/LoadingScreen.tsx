@@ -16,55 +16,55 @@ export function LoadingScreen({ onStartGame }: LoadingScreenProps) {
         }}></div>
       </div>
       
-      <div className="bg-gradient-to-b from-amber-100 via-yellow-50 to-amber-100 fantasy-card p-8 max-w-md w-full relative z-10 text-center">
+      <div className="bg-gradient-to-b from-amber-100 via-yellow-50 to-amber-100 fantasy-card p-4 sm:p-8 max-w-sm sm:max-w-md w-full mx-2 relative z-10 text-center">
         {/* Title */}
-        <h1 className="chibi-text chibi-large font-bold text-amber-900 mb-6 fantasy-glow">
+        <h1 className="chibi-text text-xs sm:chibi-large font-bold text-amber-900 mb-4 sm:mb-6 fantasy-glow">
           ⚔️ dice master ⚔️
         </h1>
         
         {/* Subtitle */}
-        <p className="chibi-text chibi-medium text-amber-800 mb-8">
+        <p className="chibi-text text-[8px] sm:chibi-medium text-amber-800 mb-4 sm:mb-8">
           prepare for battle!
         </p>
         
         {/* Game Description */}
-        <div className="bg-gradient-to-b from-amber-200 to-amber-300 fantasy-card p-4 mb-8">
-          <p className="chibi-text chibi-small text-amber-900 mb-2">
+        <div className="bg-gradient-to-b from-amber-200 to-amber-300 fantasy-card p-2 sm:p-4 mb-4 sm:mb-8">
+          <p className="chibi-text text-[6px] sm:chibi-small text-amber-900 mb-1 sm:mb-2">
             🎲 roll the dice
           </p>
-          <p className="chibi-text chibi-small text-amber-900 mb-2">
+          <p className="chibi-text text-[6px] sm:chibi-small text-amber-900 mb-1 sm:mb-2">
             ⚔️ defeat your opponent
           </p>
-          <p className="chibi-text chibi-small text-amber-900">
+          <p className="chibi-text text-[6px] sm:chibi-small text-amber-900">
             👑 become the champion
           </p>
         </div>
         
         {/* Characters Preview */}
-        <div className="flex justify-center space-x-8 mb-8">
+        <div className="flex justify-center space-x-4 sm:space-x-8 mb-4 sm:mb-8">
           <div className="text-center">
-            <div className="w-16 h-20 fantasy-card flex items-center justify-center bg-gradient-to-b from-blue-400 to-blue-600 mb-2">
-              <div className="text-2xl">🛡️</div>
+            <div className="w-12 h-16 sm:w-16 sm:h-20 fantasy-card flex items-center justify-center bg-gradient-to-b from-blue-400 to-blue-600 mb-1 sm:mb-2">
+              <div className="text-lg sm:text-2xl">🛡️</div>
             </div>
-            <p className="chibi-text chibi-small text-blue-800">knight</p>
+            <p className="chibi-text text-[6px] sm:chibi-small text-blue-800">knight</p>
           </div>
           
-          <div className="chibi-text chibi-medium text-amber-800 flex items-center">
+          <div className="chibi-text text-[8px] sm:chibi-medium text-amber-800 flex items-center">
             vs
           </div>
           
           <div className="text-center">
-            <div className="w-16 h-20 fantasy-card flex items-center justify-center bg-gradient-to-b from-red-400 to-red-600 mb-2">
-              <div className="text-2xl">🔮</div>
+            <div className="w-12 h-16 sm:w-16 sm:h-20 fantasy-card flex items-center justify-center bg-gradient-to-b from-red-400 to-red-600 mb-1 sm:mb-2">
+              <div className="text-lg sm:text-2xl">🔮</div>
             </div>
-            <p className="chibi-text chibi-small text-red-800">mage</p>
+            <p className="chibi-text text-[6px] sm:chibi-small text-red-800">mage</p>
           </div>
         </div>
         
         {/* Start Button */}
         <button
           onClick={onStartGame}
-          className="px-8 py-4 chibi-text chibi-medium font-bold fantasy-button text-amber-900 transform hover:scale-105 transition-all duration-200"
+          className="px-4 py-2 sm:px-8 sm:py-4 chibi-text text-[8px] sm:chibi-medium font-bold fantasy-button text-amber-900 transform hover:scale-105 transition-all duration-200"
         >
           🗡️ new quest 🗡️
         </button>

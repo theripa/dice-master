@@ -21,6 +21,13 @@ body {
   min-height: 100vh;
   font-family: 'Press Start 2P', monospace;
   overflow-x: hidden;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 10px;
+  }
 }
 
 /* Fantasy RPG Pixel Art Styles */

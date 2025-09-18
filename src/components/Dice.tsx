@@ -30,9 +30,9 @@ export function Dice({ value, isRolling, size = 'medium' }: DiceProps) {
   }, [isRolling]);
 
   const sizeClasses = {
-    small: 'w-20 h-20 text-4xl',
-    medium: 'w-32 h-32 text-7xl',
-    large: 'w-48 h-48 text-9xl'
+    small: 'w-16 h-16 sm:w-20 sm:h-20 text-2xl sm:text-4xl',
+    medium: 'w-24 h-24 sm:w-32 sm:h-32 text-4xl sm:text-7xl',
+    large: 'w-32 h-32 sm:w-48 sm:h-48 text-6xl sm:text-9xl'
   };
 
   return (
